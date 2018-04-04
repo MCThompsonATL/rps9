@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="rpstestV0.4.js"></script>
+		<link rel="stylesheet" href="rpstest.css" />		
+	</head>
+	<body>
+	test
+		<div id="boxes">
+			<div id="dialog" class="window">
+				<form name="startmenu" method="post">
+					<input type="radio" name="roundoption" value="10" checked> 10 Rounds<br>
+					<input type="radio" name="roundoption" value="25"> 25 Rounds<br>
+					<input type="radio" name="roundoption" value="50"> 50 Rounds<br>
+					<input type="submit" value="Start Game" onclick="startGame()" class="close">
+				</form>
+			</div>
+			<div id="mask"></div>
+		</div>
+		
+		<div style="width:33%;padding:20px;">
+			<form name="rpsmenu" method="post">
+				<input type="radio" name="rpsoption" value="rock"> Rock<br>
+				<input type="radio" name="rpsoption" value="scissors"> Scissors<br>
+				<input type="radio" name="rpsoption" value="paper"> Paper<br>
+				<input type="radio" name="rpsoption" value="gun"> Gun<br>
+				<input type="radio" name="rpsoption" value="water"> Water<br>
+				<input type="radio" name="rpsoption" value="air"> Air<br>
+				<input type="radio" name="rpsoption" value="sponge"> Sponge<br>
+				<input type="radio" name="rpsoption" value="human"> Human<br>
+				<input type="radio" name="rpsoption" value="fire"> Fire<br>
+				<input type="submit" value="Finalize Choice" onclick="cpuChooses(); return false">
+			</form>
+		</div>
+		<div style="width:33%;padding:20px;">
+			<p id="results"></p>
+			<p id="score"></p>
+		</body>
+	</html>		
