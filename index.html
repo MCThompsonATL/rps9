@@ -23,37 +23,26 @@
 			<p id="results"></p>
 			<p id="score"></p>
 		</body>
-		<div style="width:33%;padding:20px;">
-			<form name="rpsmenu" method="post">
-				<input type="radio" name="rpsoption" value="rock" id="rpsoption">
-				<label class="rpsmenu">Rock
-				</label>
-				<label class="rpsmenu">Scissors
-				<input type="radio" name="rpsoption" value="scissors" id="rpsoption">
-				</label>
-				<label class="rpsmenu">Paper
-				<input type="radio" name="rpsoption" value="paper" id="rpsoption">
-				</label>
-				<label class="rpsmenu">Gun
-				<input type="radio" name="rpsoption" value="gun" id="rpsoption">
-				</label>
-				<label class="rpsmenu">Water
-				<input type="radio" name="rpsoption" value="water" id="rpsoption">
-				</label>
-				<label class="rpsmenu">Air
-				<input type="radio" name="rpsoption" value="air" id="rpsoption">
-				</label>
-				<label class="rpsmenu">Sponge
-				<input type="radio" name="rpsoption" value="sponge" id="rpsoption">
-				</label>
-				<label class="rpsmenu">Human
-				<input type="radio" name="rpsoption" value="human" id="rpsoption">
-				</label>
-				<label class="rpsmenu">Fire
-				<input type="radio" name="rpsoption" value="fire" id="rpsoption">
-				</label>
-				<input type="submit" value="Finalize Choice" onclick="cpuChooses(); return false">
-			</form>
+		<div name="rpsmenu" class="radio-toolbar">
+			<input type="radio" class="rpsoption" name="rpsoption" value="rock" id="optionRock" checked>
+			<label for="optionRock" class="rpsmenu">ROCK</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="scissors" id="optionScissors">
+			<label for="optionScissors" class="rpsmenu">SCISSORS</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="paper" id="optionPaper">
+			<label for="optionPaper" class="rpsmenu">PAPER</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="gun" id="optionGun">
+			<label for="optionGun" class="rpsmenu">GUN</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="water" id="optionWater">
+			<label for="optionWater" class="rpsmenu">WATER</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="air" id="optionAir">
+			<label for="optionAir" class="rpsmenu">AIR</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="sponge" id="optionSponge">
+			<label for="optionSponge" class="rpsmenu">SPONGE</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="human" id="optionHuman">
+			<label for="optionHuman" class="rpsmenu">HUMAN</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="fire" id="optionFire">
+			<label for="optionFire" class="rpsmenu">FIRE</label>
+			<input type="submit" value="Finalize Choice" onclick="cpuChooses();">
 		</div>
 		
-	</html>		
+	</html>						

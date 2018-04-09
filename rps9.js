@@ -10,7 +10,7 @@ function startGame(){
 }
 
 function cpuChooses(){
-	var userChoice = document.forms["rpsmenu"]["rpsoption"].value;
+	var userChoice = $("input[name=rpsoption]:checked").val() //getElementById isn't used because I had to use different IDs to get the CSS to work.
 	var computerChoice = Math.random();
 	if (computerChoice < 0.11){
 		computerChoice = "rock";
