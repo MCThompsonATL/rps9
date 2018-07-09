@@ -11,15 +11,14 @@ html{
 }
 
 body{
-	margin: 0;
-        flex: 0 1 auto;
-        align-self: auto;
-        /*recommend 1920 / 1080 max based on usage stats, use 100% to that point*/
-        width: 100%
-        max-width: 900px;
-        height: 100%;
-        max-height: 600px;
-        background:#fafafa
+	margin: auto;
+    flex: 0 1 auto;
+    align-self: auto;
+    height: 100%;
+    max-height: 600px;
+    background: #fafafa;
+    width: 90%;
+    text-align: center;
 }
 
 #score {
@@ -32,11 +31,12 @@ body{
 
 /*Menu Buttons, these are transformed radio buttons*/
 .rpsmenubar {
-	display: grid;
-	grid-auto-columns: 175px;
-	grid-gap: 5px;
-	padding: 10px;
-	margin: auto;
+    display: grid;
+    grid-auto-columns: 175px;
+    grid-gap: 5px;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
 }
 
 .rpsmenubar input[type="radio"] {
@@ -138,4 +138,34 @@ body{
 	bottom: 0px;
 	width: 250px;
 	left: 250px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input[type="submit"] {
+    width: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
+	.rpsmenubar {
+		grid-auto-columns: 90px;
+		width: 75%;
+	}	
+	
+	.rpsmenubar label {
+		background-color: #003d7b;
+		padding: 10px 20px;
+		font-family: 'Righteous', cursive;
+		font-size: 13px;
+		border: 2px solid #444;
+		border-radius: 4px;
+		color: #fff;
+	}
+	
+	img {
+    width: 75%;
+	}
 }
